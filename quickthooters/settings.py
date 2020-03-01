@@ -95,15 +95,15 @@ WSGI_APPLICATION = 'quickthooters.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         # 'ENGINE': 'django.db.backends.postgresql',
-#         # 'NAME': 'postgres',
-#         # # 'TEST': {
-#         # #     'NAME': 'test_db',
-#         # # },
-#         # # 'USER': 'postgres',
-#         # # 'PASSWORD': 'password',
-#         # 'HOST': '127.0.0.1',
-#         # 'PORT': '5432',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'TEST': {
+#             'NAME': 'test_db',
+#         },
+#         'USER': 'postgres',
+#         'PASSWORD': 'password',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
 #     }
 # }
 # Database
