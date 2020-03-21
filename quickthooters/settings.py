@@ -95,6 +95,7 @@ WSGI_APPLICATION = 'quickthooters.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+import dj_database_url
 
 DATABASES = {
     'default': {
@@ -103,12 +104,14 @@ DATABASES = {
         'TEST': {
             'NAME': 'test_db',
         },
-        'USER': 'name',
+        'USER': 'postgres',
         'PASSWORD': 'password',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
