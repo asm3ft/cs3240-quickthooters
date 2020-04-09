@@ -35,7 +35,7 @@ def get_Request(request):
         form = RequestForm()
         return render(request, 'tutor_request/fill_form.html', {'form': form})
 
-def  request_list(request):
+def request_list(request):
     context = {
 
         'requests': Request.objects.all().filter(author=request.user)
