@@ -168,6 +168,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'main/static')
 ]
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
 # Django all auth settings
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
